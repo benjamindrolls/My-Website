@@ -1,0 +1,38 @@
+footer {
+    background-color: #C97B84;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+header {
+    background-color: #7D2E68;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    background-image: repeating-linear-gradient(45deg, #251101, #470024, #2c5784, #5688c7);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    font-size: 50px;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 8s ease infinite;
+}
+
+#headshot {
+    width: 140px;
+    height: 181px;
+}
+
+.projects {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
