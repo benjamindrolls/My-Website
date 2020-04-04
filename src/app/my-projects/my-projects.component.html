@@ -1,6 +1,6 @@
 <body>
 
-<header>
+<header id="start">
     <p class="intro">Hello my name is</p>
     <h1 class="intro">Benjamin Rolls</h1>
     <img src="../assets/grandcircusheadshots_2.jpg" alt="Benjamin Rolls head shot" id="headshot">
@@ -13,22 +13,24 @@
 
 <div id="myWork">
 
-    <img src="../assets/BudgetBuddy.PNG" alt="BudgetBuddy Project" class="projects">
-    <img src="../assets/destinationGR.PNG" alt="destinationGR Project" class="projects">
-    <img src="../assets/RecipeProject.PNG" alt="Recipe Project" class="projects">
+    <img src="../assets/BudgetBuddy.PNG" alt="BudgetBuddy Project" class="projects" id="budgetbuddy">
+    <img src="../assets/destinationGR.PNG" alt="destinationGR Project" class="projects" id="destinationGR">
+    <img src="../assets/RecipeProject.PNG" alt="Recipe Project" class="projects" id="RecipeProject">
 </div>
 
 
 <footer>
     <a href="https://www.linkedin.com/in/benjamin-rolls-8b1788108/" target="_blank" id="Link">
-        <img src="https://img.icons8.com/material/48/000000/linkedin--v1.png">
+        <button mat-stroked-button>LinkedIn</button>
     </a>
     <a href="https://github.com/benjamindrolls" target="_blank" id="Git">
-        <img src="https://img.icons8.com/material/48/000000/github.png">
+        <button mat-stroked-button> GitHub</button>
     </a>
 
-    <a href="">
-        <img src="https://img.icons8.com/material-sharp/48/000000/home.png" id="Home"> 
+    <a href="#start">
+        <button mat-icon-button id="Home">
+            <mat-icon>home</mat-icon>
+        </button>
     </a>
 </footer>
 </body>
