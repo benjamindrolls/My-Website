@@ -571,7 +571,7 @@ header {
     border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
     text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
     white-space: nowrap;
-    animation: Html 19.26s linear 1s infinite, beam-blink 1s 6;
+    animation: git 19.26s linear 1s infinite, beam-blink 1s 6;
 }
 @keyframes git {
     0%, 0.5182107996% {
