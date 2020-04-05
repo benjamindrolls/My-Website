@@ -71,10 +71,9 @@ header {
     }
   }
 
- 
 
-
-  @font-face {
+/* neon sign begins here*/
+ @font-face {
     font-family: Clip;
     src: url("https://acupoftee.github.io/fonts/Clip.ttf");
   }
@@ -261,7 +260,7 @@ header {
 
 
 
-
+/*begin skill*/
   @keyframes Angular {
 	 0%, 0.5182107996% {
 		 content: "A";
