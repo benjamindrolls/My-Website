@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MyProjectsComponent implements OnInit {
 
   constructor() { }
-
   
+  $strings:string
 
   ngOnInit() {
   }
