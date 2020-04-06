@@ -13,8 +13,14 @@ header {
 }
 .intro {
     margin: 0;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: 50px;
+    color: white;
+}
+
+.text {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #headshot {
@@ -51,25 +57,20 @@ header {
 }
 
 
-#destinationGR:hover {
-    animation-name: fade;
-    height: 450;
-    width: 300;
+#destinationGR:hover{
+  transform: scale(1.5);
+}
+#budgetbuddy:hover {
+  transform: scale(1.5);
+}
+#RecipeProject:hover {
+  transform: scale(1.5);
 }
 
 .skills {
     border: solid 1px black;
     background-color: black ;
 }
-
-@keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
 
 /* neon sign begins here*/
@@ -257,7 +258,7 @@ header {
       text-shadow: none;
     }
   }
-
+/*End of Neon Sign*/
 
 
 /*begin skill*/
@@ -281,7 +282,7 @@ header {
 		 content: "Angula";
 	}
 	 3.1152647975%, 100%{
-		 content: "Angular";
+     content: "Angular";
 	}
 }
  @keyframes beam-blink {
@@ -592,3 +593,4 @@ header {
         content: "GitHub";
    }
 }
+/*End of skills*/
