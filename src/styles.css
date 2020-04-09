@@ -7,7 +7,3 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
-body::after {
-    opacity: 0.3;
-}
