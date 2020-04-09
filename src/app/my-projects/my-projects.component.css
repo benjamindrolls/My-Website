@@ -1,0 +1,665 @@
+body {
+  height: 100%;
+  background-color: black;
+}
+.text {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  height: 30px;
+}
+
+.links {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  width: 80px;
+}
+
+.projects {
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+}
+
+.description {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#Git {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+}
+#Link {
+    bottom: 0;
+    left: 75%;
+    position: absolute;
+}
+#Home {
+    bottom: 0;
+    left: 25%;
+    position: absolute;
+}
+
+.des {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px;
+  width: 220px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container:hover .description{
+  opacity: 1;
+}
+
+.skills {
+    border: solid 1px black;
+    background-color: black ;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.try {
+  color: white;
+}
+
+/* neon sign begins here*/
+ @font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+
+  .sign {
+    letter-spacing: 2;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+
+  .fastFlicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
+  }
+/*End of Neon Sign*/
+
+
+/*begin skill*/
+  @keyframes Angular {
+	 0%, 0.5182107996% {
+		 content: "A";
+	}
+	 0.5192107996%, 1.0374215992% {
+		 content: "A";
+	}
+	 1.0384215992%, 1.5566323988% {
+		 content: "Ang";
+	}
+	 1.5576323988%, 2.0758431983% {
+		 content: "Angu";
+	}
+	 2.0768431983%, 2.5950539979% {
+		 content: "Angul";
+	}
+	 2.5960539979%, 3.1142647975% {
+		 content: "Angula";
+	}
+	 3.1152647975%, 100%{
+     content: "Angular";
+	}
+}
+ @keyframes beam-blink {
+	 75% {
+		 border-color: transparent;
+	}
+}
+ .angular {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 background-repeat: repeat-y;
+	 background-position: center center;
+	 background-size: cover, 100% 3px;
+	 font-size: calc(10px + 2vw);
+	 font-family: 'VT323', monospace, sans-serif;
+	 color: #3f3;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+
+ .angular::after {
+	 content: "";
+	 top: -13px;
+	 display: inline-block;
+	 padding-right: 3px;
+	 padding-right: calc(3px + 0.1vw);
+	 border-right: 10px solid rgba(51, 255, 51, 0.75);
+	 border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+	 text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+	 white-space: nowrap;
+	 animation: Angular 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+
+
+@keyframes Java {
+    0%, 0.5182107996% {
+        content: "J";
+   }
+    0.5192107996%, 1.0374215992% {
+        content: "Ja";
+   }
+    1.0384215992%, 1.5566323988% {
+        content: "Jav";
+   }
+    1.5576323988%, 2.0758431983% {
+        content: "Java";
+   }
+    2.0768431983%, 2.5950539979% {
+        content: "JavaS";
+   }
+    2.5960539979%, 3.1142647975% {
+        content: "JavaSc";
+   }
+    3.1152647975%, 3.6334755971% {
+        content: "JavaScri";
+   }
+    3.6344755971%, 4.1526863967% {
+        content: "JavaScrip";
+   }
+   4.1536863967%, 100% {
+    content: "JavaScript";
+   }
+}
+.Java {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(10px + 2vw);
+    font-family: 'VT323', monospace, sans-serif;
+    color: #3f3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Java::after {
+    content: "";
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: Java 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+
+.HTML {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(10px + 2vw);
+    font-family: 'VT323', monospace, sans-serif;
+    color: #3f3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.HTML::after {
+    content: "";
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: Html 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+@keyframes Html {
+    0%, 0.5182107996% {
+        content: "H";
+   }
+    0.5192107996%, 1.0374215992% {
+        content: "HT";
+   }
+    1.0384215992%, 1.5566323988% {
+        content: "HTM";
+   }
+   1.5576323988%, 2.0758431983%{
+        content: "HTML";
+   }
+   2.0768431983%,100%{
+     content: "HTML5";
+   }
+}
+
+
+.CSS {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(10px + 2vw);
+    font-family: 'VT323', monospace, sans-serif;
+    color: #3f3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.CSS::after {
+    content: "";
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: css 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+
+@keyframes css {
+    0%, 0.5182107996% {
+        content: "C";
+   }
+    0.5192107996%, 1.0374215992% {
+        content: "CS";
+   }
+    1.0384215992%, 100% {
+        content: "CSS";
+   }
+}
+
+.SQL {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(10px + 2vw);
+    font-family: 'VT323', monospace, sans-serif;
+    color: #3f3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.SQL::after {
+    content: "";
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: sql 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+@keyframes sql {
+    0%, 0.5182107996% {
+        content: "S";
+   }
+    0.5192107996%, 1.0374215992% {
+        content: "SQ";
+   }
+    1.0384215992%, 100% {
+        content: "SQL";
+   }
+}
+
+.Node {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(10px + 2vw);
+    font-family: 'VT323', monospace, sans-serif;
+    color: #3f3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Node::after {
+    content: "";
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: node 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+@keyframes node {
+    0%, 0.5182107996% {
+        content: "N";
+   }
+    0.5192107996%, 1.0374215992% {
+        content: "No";
+   }
+    1.0384215992%, 1.5566323988% {
+        content: "Nod";
+   }
+    1.5576323988%, 2.0758431983% {
+        content: "Node";
+   }
+    2.0768431983%, 2.5950539979% {
+        content: "NodeJ";
+   }
+    2.5960539979%, 100% {
+        content: "NodeJS";
+   }
+}
+
+
+.Git {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(10px + 2vw);
+    font-family: 'VT323', monospace, sans-serif;
+    color: #3f3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Git::after {
+    content: "";
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: git 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+@keyframes git {
+    0%, 0.5182107996% {
+        content: "G";
+   }
+    0.5192107996%, 1.0374215992% {
+        content: "Gi";
+   }
+    1.0384215992%, 1.5566323988% {
+        content: "Git";
+   }
+    1.5576323988%, 2.0758431983% {
+        content: "GitH";
+   }
+    2.0768431983%, 2.5950539979% {
+        content: "GitHu";
+   }
+    2.5960539979%, 100% {
+        content: "GitHub";
+   }
+}
+/*End of skills*/
+
+
+
+.carousel {
+  background-color: black;
+  padding: 20px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.carousel > * {
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
+}
+.carousel figure {
+ 
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel figure div {
+  padding: 0 0px;
+}
+.carousel figure div:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel nav button {
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+
+@media(min-width: 762px){
+ #myWork {
+   height: auto;
+ }
+}
