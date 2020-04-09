@@ -1,0 +1,60 @@
+#headshot {
+    width: 140px;
+    height: 181px;
+}
+.intro {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.text {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.me {
+    text-align: center;
+}
+
+.text {
+    color: white;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.text2 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.links {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-image: url(../../assets/Code.PNG);
+    background-size: cover;
+}
+
+.button {
+    color: white;
+    width: 80px;
+}
+
+
+@media(min-width: 762px) {
+    .text {
+        font-size: 40px;
+    }
+
+    .text2 {
+        font-size: 30px;
+    }
+    #headshot{
+        width: 240px;
+        height: 316px;
+    }
+}
