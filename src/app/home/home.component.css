@@ -37,7 +37,7 @@
 .Home {
     background-image: url(../../assets/Code.PNG);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .button {
@@ -46,7 +46,7 @@
 }
 
 
-@media(min-width: 762px) {
+@media(min-height: 762px) {
     .text {
         font-size: 40px;
     }
