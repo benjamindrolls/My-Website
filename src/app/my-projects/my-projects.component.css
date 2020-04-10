@@ -610,10 +610,7 @@
   -webkit-box-align: center;
           align-items: center;
 }
-/* .carousel > * {
-  -webkit-box-flex: 0;
-          flex: 0 0 auto;
-} */
+
 .carousel figure {
  
   -webkit-transform-style: preserve-3d;
@@ -642,7 +639,6 @@
   -webkit-box-flex: 0;
           flex: 0 0 auto;
   margin: 0 5px;
-  cursor: pointer;
   color: white;
   background: none;
   border: 1px solid;
