@@ -59,3 +59,9 @@
         height: 316px;
     }
 }
+
+@media(max-height:810px) {
+    .intro {
+        font-size: 40px;
+    }
+}

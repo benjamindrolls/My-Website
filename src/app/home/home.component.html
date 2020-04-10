@@ -1,37 +1,33 @@
+<div class="Home">
+    <div class="links">
 
+        <a href="/Home">
+            <button mat-stroked-button class="button">Home</button>
+        </a>
 
-    <div class="Home">
-        <div class="links">
+        <a href="/Projects">
+            <button mat-stroked-button class="button">Projects</button>
+        </a>
 
-            <a href="/Home">
-                <button mat-stroked-button class="button">Home</button>
+        <button mat-stroked-button [matMenuTriggerFor]="menu" class="button">Contact</button>
+        <mat-menu #menu="matMenu">
+            <a href="https://www.linkedin.com/in/benjamin-rolls-8b1788108/" target="_blank">
+                <button mat-menu-item>LinkedIn</button>
             </a>
-
-            <a href="/Projects">
-                <button mat-stroked-button class="button">Projects</button>
+            <a href="https://github.com/benjamindrolls" target="_blank">
+                <button mat-menu-item> GitHub</button>
             </a>
-
-            <button mat-stroked-button [matMenuTriggerFor]="menu" class="button">Contact</button>
-            <mat-menu #menu="matMenu">
-                <a href="https://www.linkedin.com/in/benjamin-rolls-8b1788108/" target="_blank">
-                    <button mat-menu-item>LinkedIn</button>
-                </a>
-                <a href="https://github.com/benjamindrolls" target="_blank">
-                    <button mat-menu-item> GitHub</button>
-                </a>
-                <a href="https://drive.google.com/file/d/1_gTjcPwKNDqmhEqVdfQFot2y3x5lnURe/view">
-                    <button mat-menu-item>Resume</button></a>
-            </mat-menu>
-        </div>
-
-        <div class="me" data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
-            <p class="intro">Hello my name is</p>
-            <h1 class="intro">Benjamin Rolls</h1>
-            <img src="../assets/grandcircusheadshots_2.jpg" alt="Benjamin Rolls head shot" id="headshot">
-            <p class="text">I am a web developer based in Grand Rapids, Michigan.</p>
-            <p class="text">I strive for excellence in my work and continued growth on my own.</p>
-            <p class="text2">Take a look at some of my projects by hitting the projects button.</p>
-        </div>
+            <a href="https://drive.google.com/file/d/1_gTjcPwKNDqmhEqVdfQFot2y3x5lnURe/view">
+                <button mat-menu-item>Resume</button></a>
+        </mat-menu>
     </div>
+
+    <div class="me" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <p class="intro">Hello my name is</p>
+        <h1 class="intro">Benjamin Rolls</h1>
+        <img src="../assets/grandcircusheadshots_2.jpg" alt="Benjamin Rolls head shot" id="headshot">
+        <p class="text">I am a web developer based in Grand Rapids, Michigan.</p>
+        <p class="text">I strive for excellence in my work and continued growth on my own.</p>
+        <p class="text2">Take a look at some of my projects by hitting the projects button.</p>
+    </div>
+</div>
