@@ -37,6 +37,7 @@
 .Home {
     background-image: url(../../assets/Code.PNG);
     background-size: cover;
+    height: 100vh;
 }
 
 .button {
