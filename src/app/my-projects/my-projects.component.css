@@ -1,5 +1,4 @@
 .main {
-  height: 100%;
   background-color: black;
 }
 .text {
@@ -17,12 +16,6 @@
 .button {
   color: white;
   width: 80px;
-}
-
-.projects {
-    width: 200px;
-    height: 350px;
-    margin: 10px;
 }
 
 .description {
