@@ -24,26 +24,10 @@
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 57%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-#Git {
-    bottom: 0;
-    left: 50%;
-    position: absolute;
-}
-#Link {
-    bottom: 0;
-    left: 75%;
-    position: absolute;
-}
-#Home {
-    bottom: 0;
-    left: 25%;
-    position: absolute;
 }
 
 .des {
