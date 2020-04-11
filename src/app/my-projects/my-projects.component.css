@@ -601,8 +601,8 @@
   padding: 20px;
   -webkit-perspective: 500px;
           perspective: 500px;
-  overflow: hidden;
-  display: -webkit-box;
+  /* overflow: hidden; */
+  /* display: -webkit-box; */
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -647,8 +647,6 @@
 }
 
 
-@media(min-width: 762px){
- #myWork {
-   height: auto;
- }
+@media(min-height: 762px){
+ 
 }
