@@ -602,8 +602,8 @@
   padding: 20px;
   -webkit-perspective: 500px;
           perspective: 500px;
-  /* overflow: hidden; */
-  /* display: -webkit-box; */
+   overflow: hidden; 
+  display: -webkit-box; 
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -611,9 +611,13 @@
   -webkit-box-align: center;
           align-items: center;
 }
-
+.carousel > * {
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
+}
 .carousel figure {
- 
+ margin: 0;
+ /* width: 40%; */
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.5s;
@@ -622,7 +626,7 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .carousel figure div {
-  /* padding: 0 0px; */
+  padding: 0 0px;
 }
 .carousel figure div:not(:first-of-type) {
   position: absolute;
@@ -630,17 +634,18 @@
   top: 0;
 }
 .carousel nav {
-  /* display: -webkit-box;
+  display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
-  margin: 20px 0 0; */
+  margin: 20px 0 0;
 }
 .carousel nav button {
   -webkit-box-flex: 0;
           flex: 0 0 auto;
   margin: 0 5px;
   color: white;
+  cursor: pointer;
   background: none;
   border: 1px solid;
   letter-spacing: 1px;
