@@ -282,23 +282,50 @@
      content: "Angular";
 	}
 }
+@-webkit-keyframes Angular {
+  0%, 0.5182107996% {
+    content: "A";
+ }
+  0.5192107996%, 1.0374215992% {
+    content: "A";
+ }
+  1.0384215992%, 1.5566323988% {
+    content: "Ang";
+ }
+  1.5576323988%, 2.0758431983% {
+    content: "Angu";
+ }
+  2.0768431983%, 2.5950539979% {
+    content: "Angul";
+ }
+  2.5960539979%, 3.1142647975% {
+    content: "Angula";
+ }
+  3.1152647975%, 100%{
+    content: "Angular";
+ }
+}
  @keyframes beam-blink {
 	 75% {
 		 border-color: transparent;
 	}
 }
  .angular {
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 background-repeat: repeat-y;
-	 background-position: center center;
-	 background-size: cover, 100% 3px;
-	 font-size: calc(10px + 2vw);
-	 font-family: 'VT323', monospace, sans-serif;
-	 color: #3f3;
-	 -webkit-font-smoothing: antialiased;
-	 -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+  font-size: calc(10px + 2vw);
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
  .angular::after {
@@ -335,28 +362,35 @@
         content: "JavaSc";
    }
     3.1152647975%, 3.6334755971% {
-        content: "JavaScri";
+        content: "JavaScr";
    }
     3.6344755971%, 4.1526863967% {
-        content: "JavaScrip";
+        content: "JavaScri";
    }
-   4.1536863967%, 100% {
-    content: "JavaScript";
+   4.1536863967%, 4.3562984749% {
+    content: "JavaScrip";
    }
+   4.3562984749%, 100% {
+     content: "JavaScript";
+   }
+
 }
 .Java {
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: cover, 100% 3px;
-    font-size: calc(10px + 2vw);
-    font-family: 'VT323', monospace, sans-serif;
-    color: #3f3;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+  font-size: calc(10px + 2vw);
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Java::after {
@@ -373,18 +407,21 @@
 }
 
 .HTML {
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: cover, 100% 3px;
-    font-size: calc(10px + 2vw);
-    font-family: 'VT323', monospace, sans-serif;
-    color: #3f3;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+  font-size: calc(10px + 2vw);
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .HTML::after {
@@ -419,18 +456,21 @@
 
 
 .CSS {
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: cover, 100% 3px;
-    font-size: calc(10px + 2vw);
-    font-family: 'VT323', monospace, sans-serif;
-    color: #3f3;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+  font-size: calc(10px + 2vw);
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .CSS::after {
@@ -459,18 +499,21 @@
 }
 
 .SQL {
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: cover, 100% 3px;
-    font-size: calc(10px + 2vw);
-    font-family: 'VT323', monospace, sans-serif;
-    color: #3f3;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+  font-size: calc(10px + 2vw);
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .SQL::after {
@@ -498,18 +541,21 @@
 }
 
 .Node {
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: cover, 100% 3px;
-    font-size: calc(10px + 2vw);
-    font-family: 'VT323', monospace, sans-serif;
-    color: #3f3;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+  font-size: calc(10px + 2vw);
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Node::after {
@@ -547,18 +593,21 @@
 
 
 .Git {
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: cover, 100% 3px;
-    font-size: calc(10px + 2vw);
-    font-family: 'VT323', monospace, sans-serif;
-    color: #3f3;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+  font-size: calc(10px + 2vw);
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Git::after {
@@ -617,7 +666,6 @@
 }
 .carousel figure {
  margin: 0;
- /* width: 40%; */
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.5s;
@@ -627,6 +675,8 @@
 }
 .carousel figure div {
   padding: 0 0px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .carousel figure div:not(:first-of-type) {
   position: absolute;
@@ -638,7 +688,7 @@
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
-  margin: 20px 0 0;
+  margin: 20px 0;
 }
 .carousel nav button {
   -webkit-box-flex: 0;
