@@ -30,6 +30,16 @@
   text-align: center;
 }
 
+.description1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  bottom: 41%;
+  left: 57.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .des {
   background-color: black;
   color: white;
@@ -42,7 +52,9 @@
 .container:hover .description{
   opacity: 1;
 }
-
+.container:hover .description1{
+  opacity: 1;
+}
 .skills {
     border: solid 1px black;
     background-color: black ;
@@ -50,9 +62,21 @@
     text-align: center;
 }
 
-.try {
+.desk {
   color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+
 }
+
+.pro {
+  background-color: black;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 /* neon sign begins here*/
  @font-face {
@@ -242,451 +266,462 @@
 /*End of Neon Sign*/
 
 
-/*begin skill*/
+#desktop {
+  display: none;
+}
+
+
+@media(min-width: 400px) and (min-height: 762px){
+  #desktop {
+    display: flex;
+  }
+  #mobile {
+    display: none;
+  }
+  .desk {
+    display: none;
+  }
+
+  .carousel {
+    background-color: black;
+    padding: 20px;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+     overflow: hidden; 
+    display: -webkit-box; 
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .carousel > * {
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+  }
+  .carousel figure {
+   margin: 0;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .carousel figure div {
+    padding: 0 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .carousel figure div:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .carousel nav {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin: 20px 0;
+  }
+  .carousel nav button {
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+    margin: 0 5px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: 1px solid;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+  }
+
+
+  /*begin skill*/
   @keyframes Angular {
-	 0%, 0.5182107996% {
-		 content: "A";
-	}
-	 0.5192107996%, 1.0374215992% {
-		 content: "A";
-	}
-	 1.0384215992%, 1.5566323988% {
-		 content: "Ang";
-	}
-	 1.5576323988%, 2.0758431983% {
-		 content: "Angu";
-	}
-	 2.0768431983%, 2.5950539979% {
-		 content: "Angul";
-	}
-	 2.5960539979%, 3.1142647975% {
-		 content: "Angula";
-	}
-	 3.1152647975%, 100%{
-     content: "Angular";
-	}
-}
-@-webkit-keyframes Angular {
-  0%, 0.5182107996% {
-    content: "A";
- }
-  0.5192107996%, 1.0374215992% {
-    content: "A";
- }
-  1.0384215992%, 1.5566323988% {
-    content: "Ang";
- }
-  1.5576323988%, 2.0758431983% {
-    content: "Angu";
- }
-  2.0768431983%, 2.5950539979% {
-    content: "Angul";
- }
-  2.5960539979%, 3.1142647975% {
-    content: "Angula";
- }
-  3.1152647975%, 100%{
-    content: "Angular";
- }
-}
- @keyframes beam-blink {
-	 75% {
-		 border-color: transparent;
-	}
-}
- .angular {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #000;
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-size: cover, 100% 3px;
-  font-size: calc(10px + 2vw);
-  font-family: 'VT323', monospace, sans-serif;
-  color: #3f3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
- .angular::after {
-	 content: "";
-	 top: -13px;
-	 display: inline-block;
-	 padding-right: 3px;
-	 padding-right: calc(3px + 0.1vw);
-	 border-right: 10px solid rgba(51, 255, 51, 0.75);
-	 border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-	 text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-	 white-space: nowrap;
-	 animation: Angular 19.26s linear 1s infinite, beam-blink 1s infinite;
-}
-
-
-@keyframes Java {
     0%, 0.5182107996% {
-        content: "J";
+      content: "A";
    }
     0.5192107996%, 1.0374215992% {
-        content: "Ja";
+      content: "A";
    }
     1.0384215992%, 1.5566323988% {
-        content: "Jav";
+      content: "Ang";
    }
     1.5576323988%, 2.0758431983% {
-        content: "Java";
+      content: "Angu";
    }
     2.0768431983%, 2.5950539979% {
-        content: "JavaS";
+      content: "Angul";
    }
     2.5960539979%, 3.1142647975% {
-        content: "JavaSc";
+      content: "Angula";
    }
-    3.1152647975%, 3.6334755971% {
-        content: "JavaScr";
+    3.1152647975%, 100%{
+      content: "Angular";
    }
-    3.6344755971%, 4.1526863967% {
-        content: "JavaScri";
+ }
+ @-webkit-keyframes Angular {
+   0%, 0.5182107996% {
+     content: "A";
+  }
+   0.5192107996%, 1.0374215992% {
+     content: "A";
+  }
+   1.0384215992%, 1.5566323988% {
+     content: "Ang";
+  }
+   1.5576323988%, 2.0758431983% {
+     content: "Angu";
+  }
+   2.0768431983%, 2.5950539979% {
+     content: "Angul";
+  }
+   2.5960539979%, 3.1142647975% {
+     content: "Angula";
+  }
+   3.1152647975%, 100%{
+     content: "Angular";
+  }
+ }
+  @keyframes beam-blink {
+    75% {
+      border-color: transparent;
    }
-   4.1536863967%, 4.3562984749% {
-    content: "JavaScrip";
-   }
-   4.3562984749%, 100% {
-     content: "JavaScript";
-   }
-
-}
-.Java {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #000;
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-size: cover, 100% 3px;
-  font-size: calc(10px + 2vw);
-  font-family: 'VT323', monospace, sans-serif;
-  color: #3f3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.Java::after {
-    content: "";
-    top: -13px;
-    display: inline-block;
-    padding-right: 3px;
-    padding-right: calc(3px + 0.1vw);
-    border-right: 10px solid rgba(51, 255, 51, 0.75);
-    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-    white-space: nowrap;
-    animation: Java 19.26s linear 1s infinite, beam-blink 1s infinite;
-}
-
-.HTML {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #000;
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-size: cover, 100% 3px;
-  font-size: calc(10px + 2vw);
-  font-family: 'VT323', monospace, sans-serif;
-  color: #3f3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.HTML::after {
-    content: "";
-    top: -13px;
-    display: inline-block;
-    padding-right: 3px;
-    padding-right: calc(3px + 0.1vw);
-    border-right: 10px solid rgba(51, 255, 51, 0.75);
-    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-    white-space: nowrap;
-    animation: Html 19.26s linear 1s infinite, beam-blink 1s infinite;
-}
-@keyframes Html {
-    0%, 0.5182107996% {
-        content: "H";
-   }
-    0.5192107996%, 1.0374215992% {
-        content: "HT";
-   }
-    1.0384215992%, 1.5566323988% {
-        content: "HTM";
-   }
-   1.5576323988%, 2.0758431983%{
-        content: "HTML";
-   }
-   2.0768431983%,100%{
-     content: "HTML5";
-   }
-}
-
-
-.CSS {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #000;
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-size: cover, 100% 3px;
-  font-size: calc(10px + 2vw);
-  font-family: 'VT323', monospace, sans-serif;
-  color: #3f3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.CSS::after {
-    content: "";
-    top: -13px;
-    display: inline-block;
-    padding-right: 3px;
-    padding-right: calc(3px + 0.1vw);
-    border-right: 10px solid rgba(51, 255, 51, 0.75);
-    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-    white-space: nowrap;
-    animation: css 19.26s linear 1s infinite, beam-blink 1s infinite;
-}
-
-@keyframes css {
-    0%, 0.5182107996% {
-        content: "C";
-   }
-    0.5192107996%, 1.0374215992% {
-        content: "CS";
-   }
-    1.0384215992%, 100% {
-        content: "CSS";
-   }
-}
-
-.SQL {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #000;
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-size: cover, 100% 3px;
-  font-size: calc(10px + 2vw);
-  font-family: 'VT323', monospace, sans-serif;
-  color: #3f3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.SQL::after {
-    content: "";
-    top: -13px;
-    display: inline-block;
-    padding-right: 3px;
-    padding-right: calc(3px + 0.1vw);
-    border-right: 10px solid rgba(51, 255, 51, 0.75);
-    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-    white-space: nowrap;
-    animation: sql 19.26s linear 1s infinite, beam-blink 1s infinite;
-}
-@keyframes sql {
-    0%, 0.5182107996% {
-        content: "S";
-   }
-    0.5192107996%, 1.0374215992% {
-        content: "SQ";
-   }
-    1.0384215992%, 100% {
-        content: "SQL";
-   }
-}
-
-.Node {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #000;
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-size: cover, 100% 3px;
-  font-size: calc(10px + 2vw);
-  font-family: 'VT323', monospace, sans-serif;
-  color: #3f3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.Node::after {
-    content: "";
-    top: -13px;
-    display: inline-block;
-    padding-right: 3px;
-    padding-right: calc(3px + 0.1vw);
-    border-right: 10px solid rgba(51, 255, 51, 0.75);
-    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-    white-space: nowrap;
-    animation: node 19.26s linear 1s infinite, beam-blink 1s infinite;
-}
-@keyframes node {
-    0%, 0.5182107996% {
-        content: "N";
-   }
-    0.5192107996%, 1.0374215992% {
-        content: "No";
-   }
-    1.0384215992%, 1.5566323988% {
-        content: "Nod";
-   }
-    1.5576323988%, 2.0758431983% {
-        content: "Node";
-   }
-    2.0768431983%, 2.5950539979% {
-        content: "NodeJ";
-   }
-    2.5960539979%, 100% {
-        content: "NodeJS";
-   }
-}
-
-
-.Git {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #000;
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-size: cover, 100% 3px;
-  font-size: calc(10px + 2vw);
-  font-family: 'VT323', monospace, sans-serif;
-  color: #3f3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.Git::after {
-    content: "";
-    top: -13px;
-    display: inline-block;
-    padding-right: 3px;
-    padding-right: calc(3px + 0.1vw);
-    border-right: 10px solid rgba(51, 255, 51, 0.75);
-    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-    white-space: nowrap;
-    animation: git 19.26s linear 1s infinite, beam-blink 1s infinite;
-}
-@keyframes git {
-    0%, 0.5182107996% {
-        content: "G";
-   }
-    0.5192107996%, 1.0374215992% {
-        content: "Gi";
-   }
-    1.0384215992%, 1.5566323988% {
-        content: "Git";
-   }
-    1.5576323988%, 2.0758431983% {
-        content: "GitH";
-   }
-    2.0768431983%, 2.5950539979% {
-        content: "GitHu";
-   }
-    2.5960539979%, 100% {
-        content: "GitHub";
-   }
-}
-/*End of skills*/
-
-
-
-.carousel {
-  background-color: black;
-  padding: 20px;
-  -webkit-perspective: 500px;
-          perspective: 500px;
-   overflow: hidden; 
-  display: -webkit-box; 
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-align: center;
-          align-items: center;
-}
-.carousel > * {
-  -webkit-box-flex: 0;
-          flex: 0 0 auto;
-}
-.carousel figure {
- margin: 0;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-.carousel figure div {
-  padding: 0 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.carousel figure div:not(:first-of-type) {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.carousel nav {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  margin: 20px 0;
-}
-.carousel nav button {
-  -webkit-box-flex: 0;
-          flex: 0 0 auto;
-  margin: 0 5px;
-  color: white;
-  cursor: pointer;
-  background: none;
-  border: 1px solid;
-  letter-spacing: 1px;
-  padding: 5px 10px;
-}
-
-
-@media(min-height: 762px){
+ }
+  .angular {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+           justify-content: center;
+   background-color: #000;
+   background-repeat: repeat-y;
+   background-position: center center;
+   background-size: cover, 100% 3px;
+   font-size: calc(10px + 2vw);
+   font-family: 'VT323', monospace, sans-serif;
+   color: #3f3;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
  
+  .angular::after {
+    content: "";
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: Angular 19.26s linear 1s infinite, beam-blink 1s infinite;
+ }
+ 
+ 
+ @keyframes Java {
+     0%, 0.5182107996% {
+         content: "J";
+    }
+     0.5192107996%, 1.0374215992% {
+         content: "Ja";
+    }
+     1.0384215992%, 1.5566323988% {
+         content: "Jav";
+    }
+     1.5576323988%, 2.0758431983% {
+         content: "Java";
+    }
+     2.0768431983%, 2.5950539979% {
+         content: "JavaS";
+    }
+     2.5960539979%, 3.1142647975% {
+         content: "JavaSc";
+    }
+     3.1152647975%, 3.6334755971% {
+         content: "JavaScr";
+    }
+     3.6344755971%, 4.1526863967% {
+         content: "JavaScri";
+    }
+    4.1536863967%, 4.3562984749% {
+     content: "JavaScrip";
+    }
+    4.3562984749%, 100% {
+      content: "JavaScript";
+    }
+ 
+ }
+ .Java {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+           justify-content: center;
+   background-color: #000;
+   background-repeat: repeat-y;
+   background-position: center center;
+   background-size: cover, 100% 3px;
+   font-size: calc(10px + 2vw);
+   font-family: 'VT323', monospace, sans-serif;
+   color: #3f3;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ .Java::after {
+     content: "";
+     top: -13px;
+     display: inline-block;
+     padding-right: 3px;
+     padding-right: calc(3px + 0.1vw);
+     border-right: 10px solid rgba(51, 255, 51, 0.75);
+     border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+     text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+     white-space: nowrap;
+     animation: Java 19.26s linear 1s infinite, beam-blink 1s infinite;
+ }
+ 
+ .HTML {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+           justify-content: center;
+   background-color: #000;
+   background-repeat: repeat-y;
+   background-position: center center;
+   background-size: cover, 100% 3px;
+   font-size: calc(10px + 2vw);
+   font-family: 'VT323', monospace, sans-serif;
+   color: #3f3;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ .HTML::after {
+     content: "";
+     top: -13px;
+     display: inline-block;
+     padding-right: 3px;
+     padding-right: calc(3px + 0.1vw);
+     border-right: 10px solid rgba(51, 255, 51, 0.75);
+     border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+     text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+     white-space: nowrap;
+     animation: Html 19.26s linear 1s infinite, beam-blink 1s infinite;
+ }
+ @keyframes Html {
+     0%, 0.5182107996% {
+         content: "H";
+    }
+     0.5192107996%, 1.0374215992% {
+         content: "HT";
+    }
+     1.0384215992%, 1.5566323988% {
+         content: "HTM";
+    }
+    1.5576323988%, 2.0758431983%{
+         content: "HTML";
+    }
+    2.0768431983%,100%{
+      content: "HTML5";
+    }
+ }
+ 
+ 
+ .CSS {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+           justify-content: center;
+   background-color: #000;
+   background-repeat: repeat-y;
+   background-position: center center;
+   background-size: cover, 100% 3px;
+   font-size: calc(10px + 2vw);
+   font-family: 'VT323', monospace, sans-serif;
+   color: #3f3;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ .CSS::after {
+     content: "";
+     top: -13px;
+     display: inline-block;
+     padding-right: 3px;
+     padding-right: calc(3px + 0.1vw);
+     border-right: 10px solid rgba(51, 255, 51, 0.75);
+     border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+     text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+     white-space: nowrap;
+     animation: css 19.26s linear 1s infinite, beam-blink 1s infinite;
+ }
+ 
+ @keyframes css {
+     0%, 0.5182107996% {
+         content: "C";
+    }
+     0.5192107996%, 1.0374215992% {
+         content: "CS";
+    }
+     1.0384215992%, 100% {
+         content: "CSS";
+    }
+ }
+ 
+ .SQL {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+           justify-content: center;
+   background-color: #000;
+   background-repeat: repeat-y;
+   background-position: center center;
+   background-size: cover, 100% 3px;
+   font-size: calc(10px + 2vw);
+   font-family: 'VT323', monospace, sans-serif;
+   color: #3f3;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ .SQL::after {
+     content: "";
+     top: -13px;
+     display: inline-block;
+     padding-right: 3px;
+     padding-right: calc(3px + 0.1vw);
+     border-right: 10px solid rgba(51, 255, 51, 0.75);
+     border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+     text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+     white-space: nowrap;
+     animation: sql 19.26s linear 1s infinite, beam-blink 1s infinite;
+ }
+ @keyframes sql {
+     0%, 0.5182107996% {
+         content: "S";
+    }
+     0.5192107996%, 1.0374215992% {
+         content: "SQ";
+    }
+     1.0384215992%, 100% {
+         content: "SQL";
+    }
+ }
+ 
+ .Node {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+           justify-content: center;
+   background-color: #000;
+   background-repeat: repeat-y;
+   background-position: center center;
+   background-size: cover, 100% 3px;
+   font-size: calc(10px + 2vw);
+   font-family: 'VT323', monospace, sans-serif;
+   color: #3f3;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ .Node::after {
+     content: "";
+     top: -13px;
+     display: inline-block;
+     padding-right: 3px;
+     padding-right: calc(3px + 0.1vw);
+     border-right: 10px solid rgba(51, 255, 51, 0.75);
+     border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+     text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+     white-space: nowrap;
+     animation: node 19.26s linear 1s infinite, beam-blink 1s infinite;
+ }
+ @keyframes node {
+     0%, 0.5182107996% {
+         content: "N";
+    }
+     0.5192107996%, 1.0374215992% {
+         content: "No";
+    }
+     1.0384215992%, 1.5566323988% {
+         content: "Nod";
+    }
+     1.5576323988%, 2.0758431983% {
+         content: "Node";
+    }
+     2.0768431983%, 2.5950539979% {
+         content: "NodeJ";
+    }
+     2.5960539979%, 100% {
+         content: "NodeJS";
+    }
+ }
+ 
+ 
+ .Git {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+           justify-content: center;
+   background-color: #000;
+   background-repeat: repeat-y;
+   background-position: center center;
+   background-size: cover, 100% 3px;
+   font-size: calc(10px + 2vw);
+   font-family: 'VT323', monospace, sans-serif;
+   color: #3f3;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ .Git::after {
+     content: "";
+     top: -13px;
+     display: inline-block;
+     padding-right: 3px;
+     padding-right: calc(3px + 0.1vw);
+     border-right: 10px solid rgba(51, 255, 51, 0.75);
+     border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+     text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+     white-space: nowrap;
+     animation: git 19.26s linear 1s infinite, beam-blink 1s infinite;
+ }
+ @keyframes git {
+     0%, 0.5182107996% {
+         content: "G";
+    }
+     0.5192107996%, 1.0374215992% {
+         content: "Gi";
+    }
+     1.0384215992%, 1.5566323988% {
+         content: "Git";
+    }
+     1.5576323988%, 2.0758431983% {
+         content: "GitH";
+    }
+     2.0768431983%, 2.5950539979% {
+         content: "GitHu";
+    }
+     2.5960539979%, 100% {
+         content: "GitHub";
+    }
+ }
+ /*End of skills*/
 }
