@@ -271,7 +271,7 @@
 }
 
 
-@media(min-width: 400px) and (min-height: 762px){
+@media(min-width: 768px){
   #desktop {
     display: flex;
   }

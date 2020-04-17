@@ -5,7 +5,7 @@
 .intro {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
 }
 .text {
@@ -46,17 +46,30 @@
 }
 
 
-@media(min-width: 400px) and (min-height: 762px){
+@media(min-width: 768px){
     .text {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .text2 {
         font-size: 30px;
     }
+
     #headshot{
         width: 240px;
         height: 316px;
+    }
+    .intro {
+        font-size: 50px;
+    }
+    .Home {
+        height: auto;
+    }
+}
+
+@media(min-width: 1440px){
+    .Home {
+        height: 100%;
     }
 }
 
