@@ -46,7 +46,7 @@
 }
 
 
-@media(min-height: 762px) {
+@media(min-width: 400px) and (min-height: 762px){
     .text {
         font-size: 40px;
     }
@@ -60,8 +60,3 @@
     }
 }
 
-@media(max-height:810px) {
-    .intro {
-        font-size: 40px;
-    }
-}
