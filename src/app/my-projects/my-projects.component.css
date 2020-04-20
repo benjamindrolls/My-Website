@@ -77,6 +77,10 @@
   justify-content: center;
 }
 
+.try {
+  color: white;
+}
+
 
 /* neon sign begins here*/
  @font-face {
