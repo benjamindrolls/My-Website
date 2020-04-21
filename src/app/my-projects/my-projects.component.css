@@ -11,6 +11,7 @@
 .pic {
   width: 295px;
   height: 636px;
+  margin: 10px;
 }
 .links {
   background-color: grey;
@@ -279,7 +280,7 @@
 }
 
 
-@media(min-width: 768px){
+@media(min-width: 1024px){
   #desktop {
     display: flex;
   }
