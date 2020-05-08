@@ -50,7 +50,7 @@
   color: white;
   font-size: 16px;
   padding: 16px;
-  width: 220px;
+  width: 235px;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -289,6 +289,10 @@
   }
   .desk {
     display: none;
+  }
+
+  .des {
+    width: 240px;
   }
 
   .carousel {
