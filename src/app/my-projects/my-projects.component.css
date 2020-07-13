@@ -376,7 +376,7 @@
       content: "Angular";
    }
  }
- @-webkit-keyframes Angular {
+ /* @-webkit-keyframes Angular {
    0%, 0.5182107996% {
      content: "A";
   }
@@ -398,7 +398,7 @@
    3.1152647975%, 100%{
      content: "Angular";
   }
- }
+ } */
   @keyframes beam-blink {
     75% {
       border-color: transparent;
@@ -736,5 +736,48 @@
          content: "GitHub";
     }
  }
+
+ .PHP {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover, 100% 3px;
+  font-size: calc(10px + 2vw);
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.PHP::after {
+    content: "";
+    top: -13px;
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    border-right: 10px solid rgba(51, 255, 51, 0.75);
+    border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+    white-space: nowrap;
+    animation: php 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+
+@keyframes php {
+    0%, 0.5182107996% {
+        content: "P";
+   }
+    0.5192107996%, 1.0374215993% {
+        content: "PH";
+   }
+    1.0384215993%, 100% {
+        content: "PHP";
+   }
+}
  /*End of skills*/
 }
